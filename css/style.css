@@ -1,0 +1,43 @@
+/* custom properties */
+:root {
+	--fontSize: 15px;
+	--centered: {
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	};
+}
+body {
+	font-size: var(--fontSize);
+}
+.slide-1 {
+	& h1 {
+		position: relative;
+		line-height: 0.7em;
+		margin-bottom: 0.7em;
+		& span {
+			display: none;
+		}
+		& svg {
+			width: 16em;
+		}
+	}
+	& h3 {
+		font-size: 2em;
+		margin-bottom: 0.75em;
+	}
+	& p {
+		font-size: 1.2em;
+		opacity: 0.5;
+		&:before {
+			margin: 0 auto 1em;
+			content: "";
+			width: 4em;
+			height: 1px;
+			border-top: 1px dotted #fff;
+			display: block;
+			opacity: 0.5;
+
+		}
+	}
+}

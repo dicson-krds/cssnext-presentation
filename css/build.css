@@ -1,0 +1,36 @@
+/* custom properties */
+body {
+	font-size: 15px;
+}
+.slide-1 {
+}
+.slide-1 h1 {
+	position: relative;
+	line-height: 0.7em;
+	margin-bottom: 0.7em;
+}
+.slide-1 h1 span {
+	display: none;
+}
+.slide-1 h1 svg {
+	width: 16em;
+}
+.slide-1 h3 {
+	font-size: 2em;
+	margin-bottom: 0.75em;
+}
+.slide-1 p {
+	font-size: 1.2em;
+	opacity: 0.5;
+}
+.slide-1 p:before {
+	margin: 0 auto 1em;
+	content: "";
+	width: 4em;
+	height: 1px;
+	border-top: 1px dotted #fff;
+	display: block;
+	opacity: 0.5;
+}
+
+/*# sourceMappingURL=../dist/css/maps/build.css.map */
