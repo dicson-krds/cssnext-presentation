@@ -27,7 +27,6 @@
 								c0.671-1.979,1.66-3.685,2.968-5.128c1.304-1.443,2.897-2.559,4.776-3.371c1.882-0.806,4.036-1.209,6.453-1.209
 								c1.766,0,3.464,0.235,5.098,0.694c1.63,0.457,3.091,1.161,4.377,2.1c1.285,0.941,2.332,2.114,3.139,3.516
 								c0.807,1.4,1.269,3.061,1.383,4.982h-8.007C20.653,17.875,18.638,16.166,15.143,16.166z"></path>
-
 								<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="46.3359" y1="740.7063" x2="46.3359" y2="788.7085" gradientTransform="matrix(1 0 0 1 0 -742.8984)">
 								<stop offset="0" style="stop-color:#5B6FB5"></stop>
 								<stop offset="0.675" style="stop-color:#4F7DBF"></stop>
@@ -48,7 +47,6 @@
 								c-0.785,1.327-1.814,2.387-3.08,3.197c-1.269,0.807-2.718,1.369-4.35,1.701c-1.631,0.323-3.293,0.482-4.981,0.482
 								c-1.729,0-3.419-0.168-5.067-0.516c-1.653-0.349-3.121-0.924-4.407-1.729c-1.287-0.807-2.346-1.87-3.169-3.196
 								c-0.825-1.322-1.277-2.986-1.352-4.983h7.774C40.313,31.799,40.499,32.554,40.864,33.187z"></path>
-
 								<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="77.269" y1="740.7063" x2="77.269" y2="788.7085" gradientTransform="matrix(1 0 0 1 0 -742.8984)">
 								<stop offset="0" style="stop-color:#5B6FB5"></stop>
 								<stop offset="0.675" style="stop-color:#4F7DBF"></stop>
@@ -172,14 +170,111 @@
 				<p>Created by <a target="_black" href="https://dicson-krds.github.io/">Dicson</a></p>
 			</section>
 			<section class="slide-2">
+				<h2>AGENDA</h2>
+				<ul>
+					<li>What is cssnext?</li>
+					<li>cssnext Features</li>
+				</ul>
+			</section>
+			<section class="bg slide-3">
+				<h2>What is cssnext?</h2>
+				<p>cssnext is a PostCSS plugin that helps you to <br>use the latest CSS syntax today. <br><br>It transforms new CSS into compatible CSS.</p>
+			</section>
+			<section class="slide-4">
+				<section class="slide-4-1">
+					<h2>Features</h2>
+					<ul class="markdownIt-TOC">
+						  <li>automatic vendor prefixes</li>
+						  <li>custom properties &amp; `var()`</li>
+						  <li>custom properties set &amp; `@apply`</li>
+						  <li>reduced `calc()`</li>
+						  <li>custom media queries</li>
+						  <li>media queries ranges</li>
+						  <li>custom selectors</li>
+						  <li>nesting</li>
+						  <li>`color()` function</li>
+						  <li>`hwb()` function</li>
+						  <li>`gray()` function</li>
+						  <li>`#rrggbbaa` colors</li>
+						  <li>`rebeccapurple` color</li>
+						  <li>`font-variant` property</li>
+						  <li>`filter` property</li>
+						  <li>`initial` value</li>
+						  <li>`rem` unit (`px` fallback)</li>
+						  <li>`:any-link` pseudo-class</li>
+						  <li>`:matches` pseudo-class</li>
+						  <li>`:not` pseudo-class</li>
+						  <li>`system-ui` font-family</li>
+						  <li>@todo</li>
+						  <li>`::` pseudo syntax (`:` fallback)</li>
+						  <li>attribute case insensitive</li>
+						  <li>`rgba` function (`rgb` fallback)</li>
+						  <li>`rgb()` function (functional-notation)</li>
+						  <li>`hsl()` function (functional-notation)</li>
+						  <li>`overflow-wrap` property (`word-wrap` fallback)</li>
+						</ul>
+				</section>
+				<section class="slide-4-2">
+					<h3>Custom properties set, `var()` &amp; `@apply` </h3>
+					<figure class="">
+						<img src="img/cssnext-variable.jpg" alt="cssnext variable" />
+					</figure>
+					<figure class="fragment">
+						<img class="output" src="img/cssnext-variable-output.jpg" alt="cssnext variable output" />
+					</figure>
+				</section>
+				<section class="slide-4-3">
+					<h3>Canvasustom media, queries & ranges</h3>
+					<p>Write the media queries ranges for a better syntax.</p>
+					<figure class="">
+						<img src="img/cssnext-media-queries.jpg" alt="cssnext custom media queries" />
+					</figure>
+					<figure class="fragment">
+						<img class="output" src="img/cssnext-media-queries-output.jpg" alt="cssnext custom media queries" />
+					</figure>
+				</section>
+				<section class="slide-4-4">
+					<h3>Canvasustom selectors</h3>
+					<p>Create your own selectors</p>
+					<figure class="">
+						<img src="img/cssnext-selector.jpg" alt="cssnext selectors" />
+					</figure>
+					<figure class="fragment">
+						<img class="output" src="img/cssnext-selector-output.jpg" alt="cssnext selectors" />
+					</figure>
+				</section>
+				<section class="slide-4-5">
+					<h3>Nesting</h3>
+					<figure class="">
+						<img src="img/cssnext-nesting.jpg" alt="cssnext nesting" />
+					</figure>
+					<figure class="fragment">
+						<img class="output" src="img/cssnext-nesting-output.jpg" alt="cssnext nesting" />
+					</figure>
+				</section>
+				<section class="slide-4-6">
+					<h3>color() function</h3>
+					<figure class="">
+						<img src="img/cssnext-color.jpg" alt="cssnext color" />
+					</figure>
+					<figure class="fragment">
+						<img class="output" src="img/cssnext-color-output.jpg" alt="cssnext color" />
+					</figure>
+				</section>
+				<section class="slide-4-7">
+					<h3>hwb() function</h3>
+					<p>HWB (short for Hue-Whiteness-Blackness) is similar to HSL, it's method of specifying colors.</p>
 
+					<div class="">
+
+					</div>
+				</section>
 			</section>
 		</div>
 	</div>
 	<script src="lib/js/head.min.js"></script>
 	<script src="js/reveal.js"></script>
 	<script>
-		// More info https://github.com/hakimel/reveal.js#configuration
 		Reveal.initialize({
 			history: true,
 			transition: 'convex', // none/fade/slide/convex/concave/zoom

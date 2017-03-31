@@ -1,14 +1,24 @@
 /* custom properties */
 :root {
-	--fontSize: 15px;
-	--centered: {
-	  display: flex;
-	  align-items: center;
-	  justify-content: center;
-	};
+	--fontSize: 18px;
+	--bgurl: ../img;
 }
 body {
 	font-size: var(--fontSize);
+}
+.slide-background.bg:after {
+	background-color: #000;
+	opacity: 0.85;
+	width: 100%;
+	height: 100%;
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.slide-background.slide-3 {
+	background: url('var(--bgurl)/bg1.jpg') no-repeat center;
+	background-size: cover;
 }
 .slide-1 {
 	& h1 {
@@ -37,7 +47,122 @@ body {
 			border-top: 1px dotted #fff;
 			display: block;
 			opacity: 0.5;
-
 		}
 	}
+}
+.slide-2 {
+	& h2 {
+		font-size: 4em;
+	}
+	& ul {
+		counter-reset: section;
+		list-style-type: none;
+		font-size: 1.2em;
+		& li {
+			box-shadow: 0.2em 0.2em 0.6em 0em rgba(0, 0, 0, 0.15);
+			display: block;
+			position: relative;
+			background-color: #353535;
+			margin-bottom: 1em;
+			height: 2em;
+			line-height: 2em;
+			padding: 0 1em 0 1.3em;
+			min-width: 11em;
+			&:before {
+				counter-increment: section;
+				content: counters(section,"");
+				background-color: #30adea;
+				width: 2em;
+				height: 2em;
+				line-height: 2em;
+				text-align: center;
+				font-size: 1em;
+				border-radius: 50%;
+				border: 0.3em solid #222;
+				position: absolute;
+				left: -2em;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}
+.slide-3 {
+	& h2 {
+		font-size: 3.6em;
+	}
+	& p {
+		font-size: 1.4em;
+	}
+}
+.slide-4 {
+	& h2 {
+		font-size: 3.6em;
+	}
+	& .markdownIt-TOC {
+		margin: 0;
+		width: 46em;
+		font-size: 1.2em;
+		overflow: hidden;
+		& li {
+			width: 46%;
+			box-sizing: border-box;
+			margin-left: 1em;
+			float: left;
+			margin-bottom: 0.2em;
+			color: #b7b393;
+		}
+	}
+	& h3 {
+		color: #b7b393;
+		font-size: 2em;
+	}
+}
+.slide-4-2 {
+	& figure {
+		display: inline-block;
+		vertical-align: middle;
+		width: 21em;
+	}
+}
+.slide-4-5 {
+	& figure {
+		display: inline-block;
+		vertical-align: middle;
+		width: 23em;
+	}
+}
+.slide-4-3 {
+	& figure {
+		max-width: 55%;
+		margin: 0 auto;
+		& img {
+			margin-top: 0;
+		}
+	}
+}
+.slide-4-4 {
+	& figure {
+		max-width: 62%;
+		margin: 0 auto;
+		& img {
+			margin-top: 0;
+		}
+	}
+}
+.slide-4-6 {
+	& figure {
+		max-width: 70%;
+		margin: 0 auto;
+		& img {
+			margin-top: 0;
+		}
+	}
+}
+
+
+
+
+body {
+  color: hwb(90, 0%, 0%, 0.5);
 }
